@@ -138,13 +138,13 @@ public class Rotator3D {
         double cos_a = Math.cos(angle_radians / 2.0);
         double sin_a = Math.sin(angle_radians / 2.0);
 
-        // main.java.rotator3d.Quaternion components
+        // Quaternion components
         double w = cos_a;
         double x = axis_x * sin_a;
         double y = axis_y * sin_a;
         double z = axis_z * sin_a;
 
-        // main.java.rotator3d.Quaternion-derived rotation matrix
+        // Quaternion-derived rotation matrix
         x_y_z[0] = init_x * (1 - 2*y*y - 2*z*z) + init_y * (2*x*y - 2*w*z) + init_z * (2*x*z + 2*w*y);
         x_y_z[1] = init_x * (2*x*y + 2*w*z) + init_y * (1 - 2*x*x - 2*z*z) + init_z * (2*y*z - 2*w*x);
         x_y_z[2] = init_x * (2*x*z - 2*w*y) + init_y * (2*y*z + 2*w*x) + init_z * (1 - 2*x*x - 2*y*y);
