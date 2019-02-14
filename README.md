@@ -4,7 +4,7 @@ Rotation in 3D space with quaternions.
 
 ## Usage
 
-```(init_x, init_y, init_z)``` — coordinates of point to rotate.
+```(init_x, init_y, init_z)``` — coordinates of the point to rotate.
 
 ```(0, 0, 0) -> (axis_x, axis_y, axis_z)``` — axis, around which to rotate.
 
